@@ -1,0 +1,267 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Roboto+Condensed&display=swap');
+
+:root {
+    --primary-font: 'Roboto Condensed', sans-serif;
+    --secondary-font:'Open sans', sans-serif;
+    --light-color:#ffffff;
+    --dark-color:#000000;
+    --general-transition: all .4s ease;
+}
+.title p{
+    font-family: var(--primary-font);
+    font-size: 40px;
+    font-style: italic;
+}
+
+section {
+    margin-top: 50px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    padding-bottom: 50px;
+}
+
+.bold {
+    font-weight: bold;
+    font-family: var(--secondary-font);
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/* Header Section */
+#header {
+    margin-top: 0px !important;
+    background-color: var(--dark-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.navbar {
+    /* color: var(--light-color) !important; */
+    background-color: var(--dark-color) !important;
+}
+.navbar-brand {
+    color: #ffffff !important;
+}
+.nav-link {
+    color: #ffffff !important;
+    transition: var(--general-transition);  
+    font-family: var(--secondary-font);
+    letter-spacing: 1px;
+    border-bottom: 1px solid transparent;
+}
+
+.nav-item:hover .nav-link{
+    color: red !important;
+    border-bottom: 1px solid red;
+}
+
+/* End Header Section */
+
+
+
+/* Slider Section */
+#slider {
+    margin-top: 0px;
+    position: relative;
+    background-image: url("../img/slider.jpg");
+    height: 85.3vh;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+}
+.slider-content{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-90%);
+    font-family: var(--primary-font);
+}
+.slider-text {
+    font-size: 43px;
+}
+/*End Slider Section */
+
+
+
+/*About Section */
+#about {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.about-img img {
+    width: 100%;
+    height: 100%;
+}
+.about-title {
+    font-family: var(--primary-font);
+}
+/* End About Section */
+
+
+
+
+/* What we are doing Section */
+#wedoing .col-lg-3{
+    padding:15px;
+    transition: var(--general-transition);
+    border: 1px solid var(--light-color);
+    border-radius: 10px;
+}
+#wedoing .col-lg-3:hover{
+    border: 1px solid var(--dark-color);
+    cursor: pointer;
+}
+/*End What we are doing Section */
+
+
+/* Teams Section */
+#teams .card {
+    position: relative;
+    width: 16rem ;
+    height: 750px;
+    border: none;
+    
+}
+#teams .card-title {
+    font-size: 27px;
+}
+#teams .card img {
+    height: 350px;
+    border-radius:5px 5px 0 0 ;
+}
+#teams .btn { 
+    position: absolute;
+    bottom: 10px;
+    left: 23%;
+    transition: var(--general-transition);
+    background-color: var(--dark-color);
+}
+#teams .btn:hover {
+    background-color: red;
+    border-color: red;
+}
+/* End Teams Section */
+
+
+
+
+
+/* Contact Section */
+#contact a{
+    color: black;
+    text-decoration: none;
+}
+#contact a:hover{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* End Contact Section */
+
+
+/* New Section */
+#new .card {
+    width: 16rem;
+    border: none;
+}
+#new .card img {
+    height: 250px;
+}
+
+
+
+
+
+
+
+/* How to join Section */
+#join{
+    margin: 0px;
+    position: relative;
+    background-image: url("../img/connect.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+.join-content {
+    font-size: 25px;
+    font-family: var(--secondary-font);
+    font-style: italic;
+}
+/* End How to join Section */
+
+
+/* Footer Section */
+#footer {
+    margin: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+/* EndFooter Section */
+
+
+
+
+
+/* Media Section */
+@media only screen and (max-width: 1333px) {
+    #slider .slider-text{
+        font-size: 38px;
+    }
+   
+}
+@media only screen and (max-width: 1200px) {
+    #header .navbar-collapse {
+        text-align: center;
+    }
+    #slider .slider-text{
+        font-size: 30px;
+    }
+    
+}
+@media only screen and (max-width: 934px) {
+    #slider .slider-text{
+        font-size: 23px;
+    }
+    .downloadbutton{
+        visibility: hidden;
+        display: none;
+    }
+
+}
+@media only screen and (max-width: 721px) {
+    #slider .slider-text{
+        font-size: 20px;
+    }
+    .downloadbutton{
+        visibility: hidden;
+        display: none;
+    }
+ 
+}
+@media only screen and (max-width: 575px) {
+    #team .col-lg-3 {
+        margin-left: 20% !important;
+    }
+    #new .col-lg-3 {
+        margin-left: 20% !important;
+    }
+    .downloadbutton{
+        visibility: hidden;
+        display: none;
+    }
+   
+}
+
+/*End Media Section */
